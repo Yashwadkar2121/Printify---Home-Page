@@ -1,8 +1,8 @@
 import "./App.css";
 import Footer from "./components/Footer";
-import Home from "./components/Home";
+// import Home from "./components/Home";
 import Navbar from "./components/Navbar";
-import RouterConfig from "./router";
+// import RouterConfig from "./router";
 import { BrowserRouter as Router } from "react-router-dom";
 
 function App() {
@@ -10,9 +10,9 @@ function App() {
     <>
       <Router>
         {" "}
-        <RouterConfig />
+        {/* <RouterConfig /> */}
         <Navbar />
-        <Home />
+        {/* <Home /> */}
         <Footer />
       </Router>
     </>
