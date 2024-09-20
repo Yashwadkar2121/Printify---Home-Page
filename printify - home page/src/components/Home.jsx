@@ -1,7 +1,7 @@
 function Home() {
   return (
-    <main className="p-10">
-      <section className="flex justify-between min-h-[85vh]">
+    <main>
+      <section className="flex flex-col md:flex-row justify-between min-h-[85vh] p-20">
         <div className="w-6/12 mt-20">
           <h1 className="text-6xl font-semibold">Create and sell </h1>
           <h1 className="text-6xl font-semibold mt-3">custom products</h1>
@@ -33,9 +33,11 @@ function Home() {
             Trusted by over 8M sellers around the world
           </h3>
         </div>
-        <div></div>
+        <div>
+          <img src="/simple.svg" alt="" />
+        </div>
       </section>
-      <section className="flex justify-between items-center gap-10 p-12">
+      <section className="flex justify-between items-center gap-10 p-20">
         <div>
           <img src="/higher-profits.svg" alt="" width={140} />
           <h3 className="mt-5 text-2xl font-semibold">Higher Profits</h3>
@@ -59,6 +61,61 @@ function Home() {
             With 900+ products and top quality brands, you can choose the best
             products for your business.
           </p>
+        </div>
+      </section>
+      <section className="bg-[#bcbcbc4b]">
+        <div className="flex justify-center px-40 pt-32">
+          <div className="bg-[#39b75d] w-9/12 relative">
+            <img src="clothes-C4MUJFTZ.png" alt="" className="" />
+            <div className="bg-white h-52 w-40 absolute bottom-10 m-0 -right-10 rounded-2xl border"></div>
+          </div>
+          <div className="mt-24 bg-white flex flex-col">
+            <h2 className="mt-24 ml-44 pr-24 font-bold text-2xl">
+              Easily add your design to a wide range of products
+            </h2>
+            <p className="mt-10 ml-44 pr-24 text-sm">
+              With our free design tools, you can easily add your custom designs
+              to t-shirts, mugs, phone cases, and hundreds of other products.
+            </p>
+            <div className="mt-10 ml-44 pr-24">
+              <button className="font-bold text-[#39b75d] mt-5">
+                All products{" "}
+                <i className="fa-solid fa-arrow-right text-[#39b75d]"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div className="flex justify-between items-center gap-20 px-52 pb-10 mt-2">
+          <div>
+            <img src="/custom-products.webp" alt="" width={140} />
+            <h3 className="mt-7 text-2xl font-semibold text-[#39b75d]">
+              Create
+            </h3>
+            <h3 className="mt- text-2xl font-semibold">custom products</h3>
+            <p className="mt-5 font-medium text-sm text-[#485256]">
+              Easily add your designs to a wide range of products using our free
+              tools
+            </p>
+          </div>
+          <div>
+            <img src="/your-products.webp" alt="" width={140} />
+            <h3 className="mt-7 text-2xl font-semibold text-[#39b75d]">Sell</h3>
+            <h3 className="mt- text-2xl font-semibold">on your terms</h3>
+            <p className="mt-5 font-medium text-sm text-[#485256]">
+              You choose the products, sale price, and where to sell
+            </p>
+          </div>
+          <div>
+            <img src="/fullfillment.webp" alt="" width={150} />
+            <h3 className="mt-7 text-2xl font-semibold text-[#39b75d]">
+              We handle
+            </h3>
+            <h3 className="mt- text-2xl font-semibold">fulfillment</h3>
+            <p className="mt-5 font-medium text-sm text-[#485256]">
+              Once an order is placed, we automatically handle all the printing
+              and delivery logistics
+            </p>
+          </div>
         </div>
       </section>
     </main>
