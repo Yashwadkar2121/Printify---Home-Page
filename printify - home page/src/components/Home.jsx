@@ -1,4 +1,27 @@
 function Home() {
+  const data = [
+    {
+      img1: "/robert-voltaire-RIZV7QXV.webp",
+      title: "Title for H3",
+      subtitle: "Subtitle for H4",
+      description:
+        " Printify has been an incredible service for us musicians unable to keep large amount of inventory - now we can create designs previously too expensive to print without having to have 1,000 shirts in our jam space. Thanks Printify! ",
+    },
+    {
+      img1: "/robert-voltaire-RIZV7QXV.webp",
+      title: "Title for H3",
+      subtitle: "Subtitle for H4",
+      description:
+        " Printify has been an incredible service for us musicians unable to keep large amount of inventory - now we can create designs previously too expensive to print without having to have 1,000 shirts in our jam space. Thanks Printify! ",
+    },
+    {
+      img1: "/robert-voltaire-RIZV7QXV.webp",
+      title: "Title for H3",
+      subtitle: "Subtitle for H4",
+      description:
+        " Printify has been an incredible service for us musicians unable to keep large amount of inventory - now we can create designs previously too expensive to print without having to have 1,000 shirts in our jam space. Thanks Printify! ",
+    },
+  ];
   return (
     <main>
       <section className="flex flex-col md:flex-row justify-between min-h-[85vh] p-20">
@@ -119,12 +142,64 @@ function Home() {
         </div>
       </section>
       <section>
-        <div>
-          <h1>Connect your store</h1>
-          <p>
+        <div className="mt-10">
+          <h1 className="text-3xl font-semibold text-center">
+            Connect your store
+          </h1>
+          <p className="text-center text-[#485256] mt-5 text-sm">
             Printify easily integrates with major e-commerce platforms and
             marketplaces
           </p>
+        </div>
+        <div className="flex justify-center items-center mt-10 ">
+          <div className="bg-[#ebfff0] rounded-3xl w-8/12 p-10 relative overflow-hidden flex justify-around items-center">
+            <p className="z-10">
+              Are you a large business looking for custom solutions?
+            </p>
+            <button className="z-10 bg-white  px-3 py-1 font-medium">
+              Talk To sales
+            </button>
+            <img
+              src="talk-to-sales-N2GDBAGC.svg"
+              alt=""
+              className="absolute bottom-0 right-0"
+            />
+          </div>
+        </div>
+      </section>
+      <section className="bg-[#bcbcbc4b] px-20 py-28 mt-10">
+        <div className="flex gap-10 w-8/12">
+          <p className="text-3xl font-semibold text-[#484e50]">
+            Trusted by over 8M sellers around the world
+          </p>
+          <p className=" text-[#485256] mt-5 text-sm">
+            Whether you are just getting started or run an enterprise-level
+            e-commerce business, we do everything we can to ensure a positive
+            merchant experience.
+          </p>
+        </div>
+        <div className="flex items-center gap-10 my-10">
+          {data.map((item, index) => (
+            <div
+              key={index}
+              className="bg-white border p-5 rounded-2xl w-10/12"
+            >
+              <div className="flex gap-5">
+                <img src={item.img1} alt="First Image" className="h-14" />
+                <div>
+                  {" "}
+                  <h3 className="text-xl font-bold ">{item.title}</h3>
+                  <h4 className="text-sm">{item.subtitle}</h4>
+                  <i className="fa-solid fa-star text-[#ffba19]"></i>
+                  <i className="fa-solid fa-star text-[#ffba19]"></i>
+                  <i className="fa-solid fa-star text-[#ffba19]"></i>
+                  <i className="fa-solid fa-star text-[#ffba19]"></i>
+                  <i className="fa-solid fa-star text-[#ffba19]"></i>
+                </div>
+              </div>
+              <p className="mt-5 text-sm text-[#485256] ">{item.description}</p>
+            </div>
+          ))}
         </div>
       </section>
     </main>

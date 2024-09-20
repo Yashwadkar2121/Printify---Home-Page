@@ -30,7 +30,7 @@ function Navbar() {
         </div>
       </div>
 
-      <nav className="flex justify-around md:justify-between lg:justify-around items-center p-2 px-8 lg:p-4 lg:px-4 border-b-2 relative">
+      <nav className="flex justify-around md:justify-between lg:justify-around items-center p-2 px-8 lg:p-4 lg:px-4 border-b-2 relative bg-white">
         {/* Logo Section */}
         <div className="flex justify-between items-center gap-2">
           <i
