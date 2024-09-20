@@ -118,6 +118,15 @@ function Home() {
           </div>
         </div>
       </section>
+      <section>
+        <div>
+          <h1>Connect your store</h1>
+          <p>
+            Printify easily integrates with major e-commerce platforms and
+            marketplaces
+          </p>
+        </div>
+      </section>
     </main>
   );
 }
