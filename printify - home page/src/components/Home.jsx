@@ -100,15 +100,15 @@ function Home() {
             />
           </div>
           <div className=" bg-white flex flex-col p-7 gap-10 justify-center items-center">
-            <h2 className=" font-bold text-2xl md:text-3xl xl:text-6xl text-center lg:">
+            <h2 className=" font-bold text-2xl md:text-3xl xl:text-5xl text-center lg:">
               Easily add your design to a wide range of products
             </h2>
-            <p className=" text-sm md:text-base xl:text-2xl text-center">
+            <p className=" text-sm md:text-base xl:text-xl text-center">
               With our free design tools, you can easily add your custom designs
               to t-shirts, mugs, phone cases, and hundreds of other products.
             </p>
             <div className="">
-              <button className="font-bold text-xl xl:text-3xl text-[#39b75d] mt-5">
+              <button className="font-bold text-xl xl:text-2xl text-[#39b75d] mt-5">
                 All products{" "}
                 <i className="fa-solid fa-arrow-right text-[#39b75d]"></i>
               </button>
@@ -186,8 +186,7 @@ function Home() {
           </div>
         </div>
       </section>
-      {/* 
-     
+
       <section className="bg-[#bcbcbc4b] px-20 py-28 mt-10">
         <div className="flex gap-10 w-8/12">
           <p className="text-3xl font-semibold text-[#484e50]">
@@ -222,7 +221,7 @@ function Home() {
             </div>
           ))}
         </div>
-      </section> */}
+      </section>
     </main>
   );
 }
