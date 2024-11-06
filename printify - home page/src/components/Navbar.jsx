@@ -1,5 +1,5 @@
 import logo from "../assets/logo-old-B5JY5YNQ.svg";
-import logo2 from "../assets/logo-old-B5JY5YNQ copy.svg";
+// import logo2 from "../assets/logo-old-B5JY5YNQ copy.svg";
 import { Link } from "react-router-dom";
 import SideBarMenu from "./SideBarMenu";
 import { useState } from "react";
@@ -30,7 +30,7 @@ function Navbar() {
         </div>
       </div>
 
-      <nav className="flex justify-around md:justify-between lg:justify-around items-center p-2 px-8 lg:p-4 lg:px-4 border-b-2 relative bg-white">
+      <nav className="flex justify-between lg:justify-around items-center p-2 px-8 lg:p-4 lg:px-4 border-b-2 relative bg-white">
         {/* Logo Section */}
         <div className="flex justify-between items-center gap-2">
           <i
@@ -38,13 +38,13 @@ function Navbar() {
             onClick={handleToggleSidebar} // Toggle sidebar on bar click
           ></i>
           <img src={logo} alt="logo" className="h-10 hidden md:block" />
-          <img src={logo2} alt="logo" className="h-10 md:hidden" />
+          {/* <img src={logo2} alt="logo" className="h-10 md:hidden" /> */}
         </div>
 
         {/* Navigation Links Section */}
         <div className="hidden lg:block">
           <ul className="flex justify-between items-center gap-5">
-            <li>
+            <li className="text-sm xl:text-xl">
               <Link
                 to="/"
                 className="text-[#353a47] hover:text-[#39b75d] font-medium"
@@ -54,7 +54,7 @@ function Navbar() {
             </li>
 
             {/* How it Works Dropdown */}
-            <li className="group relative">
+            <li className="group relative text-sm xl:text-xl">
               <Link
                 to="/"
                 className="duration-1000 text-[#353a47] group-hover:text-[#39b75d] font-medium"
@@ -81,7 +81,7 @@ function Navbar() {
             </li>
 
             {/* Other Links */}
-            <li>
+            <li className="text-sm xl:text-xl">
               <Link
                 to="/"
                 className="text-[#353a47] hover:text-[#39b75d] font-medium"
@@ -89,7 +89,7 @@ function Navbar() {
                 Pricing
               </Link>
             </li>
-            <li>
+            <li className="text-sm xl:text-xl">
               <Link
                 to="/"
                 className="text-[#353a47] hover:text-[#39b75d] font-medium"
@@ -99,7 +99,7 @@ function Navbar() {
             </li>
 
             {/* Services Dropdown */}
-            <li className="group relative">
+            <li className="group relative text-sm xl:text-xl">
               <Link
                 to="/"
                 className="duration-1000 text-[#353a47] group-hover:text-[#39b75d] font-medium"
@@ -129,7 +129,7 @@ function Navbar() {
             </li>
 
             {/* Use-cases Dropdown */}
-            <li className="group relative">
+            <li className="group relative text-sm xl:text-xl">
               <Link
                 to="/"
                 className="duration-1000 text-[#353a47] group-hover:text-[#39b75d] font-medium"
@@ -156,7 +156,7 @@ function Navbar() {
             </li>
 
             {/* Need Help Dropdown */}
-            <li className="group relative">
+            <li className="group relative text-sm xl:text-xl">
               <Link
                 to="/"
                 className="duration-1000 text-[#353a47] group-hover:text-[#39b75d] font-medium"
@@ -183,10 +183,10 @@ function Navbar() {
 
         {/* Buttons Section */}
         <div className="flex justify-between items-center lg:gap-5 gap-2">
-          <button className="text-sm border border-[#c2c2c2] text-[#353a47] rounded-md px-4 py-1 lg:px-5 lg:py-1.5 font-semibold hover:text-[#39b75d] whitespace-nowrap">
+          <button className="text-sm xl:text-xl border border-[#c2c2c2] text-[#353a47] rounded-md px-4 py-1 lg:px-5 lg:py-1.5 font-semibold hover:text-[#39b75d] whitespace-nowrap">
             Login
           </button>
-          <button className="text-sm border bg-[#39b75d] text-[#fff] rounded-md px-4 py-1 lg:px-5 lg:py-1.5 font-semibold hover:bg-[#27793e] whitespace-nowrap">
+          <button className="text-sm xl:text-xl border bg-[#39b75d] text-[#fff] rounded-md px-4 py-1 lg:px-5 lg:py-1.5 font-semibold hover:bg-[#27793e] whitespace-nowrap">
             Sign up
           </button>
         </div>
