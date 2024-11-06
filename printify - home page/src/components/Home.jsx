@@ -170,14 +170,15 @@ function Home() {
             marketplaces
           </p>
         </div>
-        <div className="flex justify-center items-center mt-10 ">
-          <div className="bg-[#ebfff0] rounded-3xl w-8/12 p-10 relative overflow-hidden flex justify-around items-center">
+        <div className="flex  justify-center items-center p-10 ">
+          <div className="bg-[#ebfff0] rounded-3xl md:w-8/12 p-10 relative overflow-hidden flex flex-col md:flex-row justify-around items-center text-lg gap-5 ">
             <p className="z-10">
               Are you a large business looking for custom solutions?
             </p>
-            <button className="z-10 bg-white  px-3 py-1 font-medium">
-              Talk To sales
+            <button className="z-10 bg-white px-3 py-1 font-medium text-lg whitespace-nowrap shadow-md hover:shadow-lg rounded-md">
+              Talk To Sales
             </button>
+
             <img
               src="talk-to-sales-N2GDBAGC.svg"
               alt=""
@@ -186,38 +187,36 @@ function Home() {
           </div>
         </div>
       </section>
-
-      <section className="bg-[#bcbcbc4b] px-20 py-28 mt-10">
-        <div className="flex gap-10 w-8/12">
+      <section className="bg-[#bcbcbc4b] px-10 py-28 mt-10 lg:px-16 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:w-8/12">
           <p className="text-3xl font-semibold text-[#484e50]">
             Trusted by over 8M sellers around the world
           </p>
-          <p className=" text-[#485256] mt-5 text-sm">
+          <p className="text-[#485256] mt-5 text-sm">
             Whether you are just getting started or run an enterprise-level
             e-commerce business, we do everything we can to ensure a positive
             merchant experience.
           </p>
         </div>
-        <div className="flex items-center gap-10 my-10">
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 my-10">
           {data.map((item, index) => (
-            <div
-              key={index}
-              className="bg-white border p-5 rounded-2xl w-10/12"
-            >
+            <div key={index} className="bg-white border p-5 rounded-2xl w-full">
               <div className="flex gap-5">
                 <img src={item.img1} alt="First Image" className="h-14" />
                 <div>
-                  {" "}
                   <h3 className="text-xl font-bold ">{item.title}</h3>
                   <h4 className="text-sm">{item.subtitle}</h4>
-                  <i className="fa-solid fa-star text-[#ffba19]"></i>
-                  <i className="fa-solid fa-star text-[#ffba19]"></i>
-                  <i className="fa-solid fa-star text-[#ffba19]"></i>
-                  <i className="fa-solid fa-star text-[#ffba19]"></i>
-                  <i className="fa-solid fa-star text-[#ffba19]"></i>
+                  <div>
+                    <i className="fa-solid fa-star text-[#ffba19]"></i>
+                    <i className="fa-solid fa-star text-[#ffba19]"></i>
+                    <i className="fa-solid fa-star text-[#ffba19]"></i>
+                    <i className="fa-solid fa-star text-[#ffba19]"></i>
+                    <i className="fa-solid fa-star text-[#ffba19]"></i>
+                  </div>
                 </div>
               </div>
-              <p className="mt-5 text-sm text-[#485256] ">{item.description}</p>
+              <p className="mt-5 text-sm text-[#485256]">{item.description}</p>
             </div>
           ))}
         </div>
